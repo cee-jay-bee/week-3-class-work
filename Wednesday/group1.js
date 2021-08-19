@@ -1,5 +1,6 @@
 //create the array
 let group = [];
+let groupNumber;
 
 function getPerson(){
     //get first and last name input
@@ -19,5 +20,11 @@ function getPerson(){
 while(confirm('Do you want to add a person to your group?')){
     getPerson();
 }
+
+//loop through each person of the group array
+for (let eachMember of group){
+    console.log(eachMember);
+}
+
 
 console.log(group);
